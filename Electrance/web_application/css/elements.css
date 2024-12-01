@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0; /* Light grey for text */
+    background: #121212; /* Dark background */
+    overflow-x: hidden;
+}
+
+header {
+    background: #181818; /* Darker background for header */
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo img {
+    height: 150px; /* Slightly smaller logo */
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* Bright cyan for hover effect */
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .login,
+.auth-buttons .sign-up {
+    padding: 10px 20px;
+    border-radius: 30px; /* More rounded buttons */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.auth-buttons .login {
+    background: transparent;
+    color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+}
+
+.auth-buttons .login:hover {
+    background: #00bcd4;
+    color: #121212; /* Invert colors on hover */
+}
+
+.auth-buttons .sign-up {
+    background: #00bcd4;
+    color: #121212;
+}
+
+.auth-buttons .sign-up:hover {
+    background: #01959c; /* Darker cyan for hover */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 20px;
+    background: #121212;
+    color: #e0e0e0;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3em; /* Larger font size for hero title */
+    margin-bottom: 20px;
+    color: #00bcd4; /* Cyan for hero title */
+}
+
+.hero p {
+    font-size: 1.5em; /* Slightly larger font size for paragraph */
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.resources-details {
+    padding: 50px 20px;
+    background: #181818;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+.resources-details h2 {
+    color: #00bcd4;
+    font-size: 2.5em; /* Larger font size for section headers */
+    margin-bottom: 20px;
+}
+
+.resources-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-details ul li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.resources-details ul li strong {
+    color: #00bcd4;
+}
+
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #333; /* Add a border to separate footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow above footer */
+}

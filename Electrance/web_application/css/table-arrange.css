@@ -1,0 +1,31 @@
+#arrange-main table {
+	border-spacing: 5px;
+	border-right: 1px solid #444;
+	-webkit-user-select: none;
+	user-select: none;
+	margin: 10px;
+	border-radius: 3px;
+	color: #e0e0e0; /* Light grey text */
+    background-color: #403e3e; /* Darker table background */
+}
+
+#arrange-main .arrange-header:last-child {
+	overflow: hidden;
+}
+
+#arrange-main .arrange-header.play-start-point {
+	background-image: radial-gradient(circle, #eee 0%, #eee 10%, #444 20%, transparent 35%);
+}
+
+#arrange-main .arrange-header.loop-start-point {
+	box-shadow: inset 2px 0 0 0 #ccc;
+}
+
+#arrange-main .arrange-header.loop-end-point {
+	box-shadow: inset -2px 0 0 0 #ccc;
+}
+
+#arrange-main .arrange-header.loop-start-point.loop-end-point {
+	box-shadow: inset 2px 0 0 0 #ccc, inset -2px 0 0 0 #ccc;
+}
+
